@@ -1,0 +1,29 @@
+{
+  "name": "charlies-kids-theme",
+  "version": "1.0.0",
+  "description": "A WordPress Theme for the Charlie's Kid's Site",
+  "main": "index.php",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "author": "Dot Dash",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "browser-sync": "^2.26.14",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.1"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "maintained node versions"
+  ]
+}

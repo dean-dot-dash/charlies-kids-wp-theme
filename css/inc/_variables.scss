@@ -1,0 +1,47 @@
+// COLORS
+$dark-green: #2f606c;
+$medium-green: #007b94;
+$green: #87c5d4;
+$light-green: #e1f0f5;
+$red: #df5e59;
+$purple: #54327e;
+$gray: #717070;
+
+// COLOR ROLES
+$primary-accent: $red;
+
+// COLOR APPLICATION
+$nav-link-color: $dark-green;
+$footer-background-color: $green;
+$header-color: $medium-green;
+$header-color--secondary: $primary-accent;
+$header-color--tertiary: $purple;
+$button-color: $primary-accent;
+$text-color: $gray;
+$text-color--secondary: $dark-green;
+$background-color--secondary: $light-green;
+
+// SIZES
+$xs-size: 1rem;
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+
+$header-height: 8rem;
+$footer-height: 40rem;
+
+// Z-INDEX
+$z-top: 50;
+$z-1: 3;
+$z-2: 2;
+$z-3: 1;
+$z-bottom: -50;
+
+// Line height
+$leading-none: 1;
+$leading-tight: 1.25;
+$leading-snug: 1.375;
+$leading-normal: 1.5;
+$leading-relaxed: 1.625;
+$leading-loose: 2;

@@ -1,0 +1,22 @@
+/*
+Theme Name: CharliesKids
+Text Domain: CharliesKids
+Version: 1.5
+Description: WordPress theme for Charlie's Kids site
+Author: Dot Dash
+Author URI: https://dotdash.io/
+*/
+
+@import "css/inc/variables";
+@import "css/inc/fonts";
+@import "css/inc/global";
+
+// COMPONENTS
+@import "css/inc/components/header";
+@import "css/inc/components/featured-posts";
+@import "css/inc/components/footer";
+@import "css/inc/components/button";
+
+// PAGES
+@import "css/inc/pages/front-page";
+@import "css/inc/pages/single";

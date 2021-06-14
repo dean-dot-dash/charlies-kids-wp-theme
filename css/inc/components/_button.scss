@@ -1,0 +1,29 @@
+.button {
+  background-color: $button-color;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: $m-size 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.button--large {
+  @extend .button;
+  padding: $m-size $l-size;
+  font-size: 2.4rem;
+}
+
+.button--icon {
+  @extend .button;
+  background: none;
+  padding: 0;
+  color: $primary-accent;
+  display: flex;
+  align-items: center;
+  font-size: 2.2rem;
+  img {
+    margin-left: $m-size;
+  }
+}

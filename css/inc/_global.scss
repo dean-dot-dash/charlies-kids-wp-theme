@@ -1,0 +1,39 @@
+html {
+  // Set 0.1rem equal to 1px
+  font-size: 62.5%;
+
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  // padding-bottom: 16rem; /* Height of Footer */
+  min-height: 100%;
+  min-width: 100vw;
+  font-size: 1.6rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // background: var(--background-color);
+  // color: var(--text-color);
+}
+main {
+  min-height: calc(100vh - (#{$header-height} + #{$footer-height}));
+}
+
+h1 {
+  color: $header-color;
+  font-weight: 700;
+  font-size: 6.4rem;
+}
+h2 {
+  font-size: $xl-size;
+  color: $header-color;
+}

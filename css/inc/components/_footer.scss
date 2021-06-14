@@ -1,0 +1,36 @@
+footer.footer {
+  height: $footer-height;
+  background-color: $footer-background-color;
+  padding: 11.2rem 15.2rem 0 19.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__social-links {
+  list-style: none;
+  display: flex;
+  li {
+    margin-right: $xl-size;
+  }
+  a {
+    text-decoration: none;
+  }
+  svg {
+    fill: #e5e5e5;
+  }
+}
+
+.footer__nav {
+  ul {
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $header-color;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    li {
+      margin-bottom: $s-size;
+    }
+  }
+}
