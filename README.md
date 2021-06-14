@@ -16,7 +16,9 @@ Install dependencies
 npm install
 ```
 
-Start your WordPress dev server
+Start your WordPress development server
+
+Set environment variable for your local WordPress host URL as `LOCAL_WP_HOST`
 
 Start Devlopment with Browser Sync
 
