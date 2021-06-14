@@ -1,3 +1,4 @@
+require("dotenv").config();
 // Built with this tutorial: https://www.cssigniter.com/use-sass-gulp-wordpress-theme-plugin-development-workflow/
 // Updated to Gulp 4 Standards (gulp.series)
 const gulp = require("gulp");
@@ -49,7 +50,7 @@ gulp.task(
   "watch:sass",
   gulp.series("compile:sass", function watchSass() {
     bs.init({
-      proxy: "http://charlies-kids.local/",
+      proxy: process.env.LOCAL_WP_HOST,
     });
 
     gulp.watch(SASS_SOURCES, gulp.series("compile:sass"));
