@@ -1,0 +1,15 @@
+.the-problem {
+  .wp-block-image {
+    margin: 0;
+    img {
+      object-fit: contain;
+      max-width: 100%;
+    }
+    figcaption {
+      color: $text-color--secondary;
+      text-align: right;
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+  }
+}

@@ -63,6 +63,10 @@ h4 {
   font-weight: 700;
 }
 
+.header--alt-color {
+  color: #54327e;
+}
+
 .body-copy,
 .centered-content__content p {
   font-size: 2.4rem;
@@ -91,6 +95,10 @@ h4 {
   margin: 0 0 1.4rem;
 }
 
+.centered-content__content .h3--gray {
+  color: #717070;
+}
+
 .centered-content__content a {
   color: #007b94;
 }
@@ -107,6 +115,56 @@ h4 {
 .block-heading h2,
 .block-heading h3 {
   margin: 0;
+}
+
+.button,
+.button--large,
+.button--icon {
+  background-color: #df5e59;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.button--large {
+  padding: 1.6rem 3.2rem;
+  font-size: 2.4rem;
+}
+
+.button--icon {
+  background: none;
+  padding: 0;
+  color: #df5e59;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 2.2rem;
+}
+
+.button--icon img {
+  margin-left: 1.6rem;
+}
+
+.cta {
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8.4rem 0 17.4rem;
 }
 
 header.header {
@@ -236,41 +294,6 @@ footer.footer {
 
 .footer__nav ul li {
   margin-bottom: 1.2rem;
-}
-
-.button,
-.button--large,
-.button--icon {
-  background-color: #df5e59;
-  outline: none;
-  border: none;
-  border-radius: 4px;
-  color: #fff;
-  padding: 1.6rem 2.4rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.button--large {
-  padding: 1.6rem 3.2rem;
-  font-size: 2.4rem;
-}
-
-.button--icon {
-  background: none;
-  padding: 0;
-  color: #df5e59;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 2.2rem;
-}
-
-.button--icon img {
-  margin-left: 1.6rem;
 }
 
 .front-page__hero {
@@ -544,4 +567,21 @@ footer.footer {
 
 .single__subtitle span {
   margin: 0 0 0.4rem 1rem;
+}
+
+.the-problem .wp-block-image {
+  margin: 0;
+}
+
+.the-problem .wp-block-image img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.the-problem .wp-block-image figcaption {
+  color: #2f606c;
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
