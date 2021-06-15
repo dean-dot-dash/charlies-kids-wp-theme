@@ -27,13 +27,3 @@ body {
 main {
   min-height: calc(100vh - (#{$header-height} + #{$footer-height}));
 }
-
-h1 {
-  color: $header-color;
-  font-weight: 700;
-  font-size: 6.4rem;
-}
-h2 {
-  font-size: $xl-size;
-  color: $header-color;
-}
