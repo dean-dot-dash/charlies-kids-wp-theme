@@ -1,0 +1,16 @@
+.fixed-cta {
+  position: fixed;
+  top: calc(16.8rem + 8rem);
+  width: calc((100vw - (83.6rem)) / 2);
+  padding: 0 $xl-size;
+}
+.fixed-cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $text-color--secondary;
+  }
+}
