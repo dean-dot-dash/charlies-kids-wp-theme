@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <main>
-	<div class="front-page__hero">
-		<div class="front-page__hero-content">
+	<div class="hero">
+		<div class="hero__content">
 			<h1>Safe Sleep Saves Lives.</h1>
 			<button class="button--large">Read Our Story</button>
 		</div>

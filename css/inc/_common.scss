@@ -52,6 +52,12 @@ h4 {
   h4 {
     margin-bottom: 0;
   }
+  ul {
+    color: $list-color;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: $leading-normal;
+  }
 }
 
 .block-heading {
