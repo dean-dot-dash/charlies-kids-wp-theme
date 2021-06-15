@@ -15,12 +15,21 @@
 		}
 		?>
 		<nav class="header__nav">
-			<ul>
+			<?php
+				wp_nav_menu(
+					array(
+						'menu' => 'primary',
+						'conatiner' => '',
+						'theme_location' => 'primary'
+					)
+				);
+			?>
+			<!-- <ul>
 				<li>Our Story</li>
 				<li>Professional Resources</li>
 				<li>The Problem</li>
 				<li>The Solution</li>
 				<li>Support Us</li>
-			</ul>
+			</ul> -->
 		</nav>
 	</header>

@@ -13,6 +13,19 @@ function charlieskids_theme_support(){
 
 add_action('after_setup_theme', 'charlieskids_theme_support');
 
+function charlieskids_menus() {
+
+	$locations = array(
+		'primary' => "Desktop Primary Header Menu",
+		'footer' => "Footer Menu"
+	);
+
+	register_nav_menus($locations);
+
+}
+
+add_action('init', 'charlieskids_menus');
+
 function charlieskids_register_styles(){
 
 	$version = wp_get_theme()->get( 'Version' );

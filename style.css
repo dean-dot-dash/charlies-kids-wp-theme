@@ -323,10 +323,14 @@ header.header a img {
 
 .header__nav ul li {
   list-style: none;
-  color: #2f606c;
   font-weight: 700;
   font-size: 1.8rem;
   margin-right: 3.2rem;
+}
+
+.header__nav ul li a {
+  text-decoration: none;
+  color: #2f606c;
 }
 
 .hero {

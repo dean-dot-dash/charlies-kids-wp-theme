@@ -20,10 +20,13 @@ header.header {
     padding-inline-start: $xl-size;
     li {
       list-style: none;
-      color: $nav-link-color;
       font-weight: 700;
       font-size: 1.8rem;
       margin-right: $l-size;
+      a {
+        text-decoration: none;
+        color: $nav-link-color;
+      }
     }
   }
 }
