@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 	<main>
-		<article class="single">
-			<div class="single__content">
+		<article class="centered-content">
+			<div class="centered-content__content">
 			<?php
 				if( have_posts() ){
 

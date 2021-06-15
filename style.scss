@@ -10,6 +10,7 @@ Author URI: https://dotdash.io/
 @import "css/inc/variables";
 @import "css/inc/fonts";
 @import "css/inc/global";
+@import "css/inc/common";
 
 // COMPONENTS
 @import "css/inc/components/header";
@@ -19,4 +20,5 @@ Author URI: https://dotdash.io/
 
 // PAGES
 @import "css/inc/pages/front-page";
+@import "css/inc/pages/our-story";
 @import "css/inc/pages/single";

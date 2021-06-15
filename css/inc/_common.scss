@@ -1,0 +1,58 @@
+h1 {
+  color: $header-color;
+  font-weight: 700;
+  font-size: 6.4rem;
+}
+h2 {
+  font-size: $xl-size;
+  color: $header-color;
+}
+h3 {
+  font-size: $l-size;
+  color: $header-color;
+  font-weight: 700;
+}
+h4 {
+  color: $header-color--secondary;
+  font-size: $l-size;
+  font-weight: 700;
+}
+
+.body-copy {
+  font-size: 2.4rem;
+  color: $text-color;
+  font-family: serif;
+  font-weight: 400;
+  line-height: $leading-normal;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  padding: 16.8rem 0 15.6rem;
+}
+.centered-content__content {
+  max-width: 83.6rem;
+  h1 {
+    color: $header-color--secondary;
+    margin: 0 0 1.4rem;
+  }
+  p {
+    @extend .body-copy;
+  }
+  a {
+    color: $link-color;
+  }
+  h4 {
+    margin-bottom: 0;
+  }
+}
+
+.block-heading {
+  background-color: $background-color--secondary;
+  padding: 2.2rem 4.4rem $l-size;
+  h2,
+  h3 {
+    margin: 0;
+  }
+}
