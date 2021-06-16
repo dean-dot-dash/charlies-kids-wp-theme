@@ -1,0 +1,13 @@
+.cta-banner {
+  background-color: $background-color--tertiary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8.4rem 0 11.8rem;
+}
+.cta-banner--default {
+  @extend .cta-banner;
+}
+.cta-banner--alternate {
+  @extend .cta-banner;
+}

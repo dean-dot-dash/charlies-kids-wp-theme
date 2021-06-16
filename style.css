@@ -159,7 +159,9 @@ h4 {
   margin-left: 1.6rem;
 }
 
-.cta {
+.cta-banner,
+.cta-banner--default,
+.cta-banner--alternate {
   background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -171,7 +173,7 @@ h4 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8.4rem 0 17.4rem;
+  padding: 8.4rem 0 11.8rem;
 }
 
 .featured-posts {
