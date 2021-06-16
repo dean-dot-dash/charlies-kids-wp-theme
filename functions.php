@@ -26,6 +26,18 @@ function charlieskids_menus() {
 
 add_action('init', 'charlieskids_menus');
 
+// function charlieskids_widgets() {
+
+// 	register_sidebar(
+// 		array(
+// 			'name' => 'Sidebar',
+// 			'id' => 'sidebar1',
+// 		)
+// 	);
+// }
+
+// add_action('widgets_init', 'charlieskids_widgets');
+
 function charlieskids_register_styles(){
 
 	$version = wp_get_theme()->get( 'Version' );

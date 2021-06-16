@@ -5,7 +5,7 @@ Template Name: Professional Resources Page
 	get_header(); 
 ?>
 	<main>
-		<div class="hero">
+		<!-- <div class="hero">
 			<div class="hero__content">
 				<h2>Charlie’s Kids Provides Resources to Professionals
 				in the Safe Sleep Space</h2>
@@ -13,7 +13,8 @@ Template Name: Professional Resources Page
 				<button class="button--large">Read Our Story</button>
 			</div>
 			<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HeroImage.png" alt="Hero Image" />
-		</div>
+		</div> -->
+		<?php get_template_part('template-parts/hero'); ?>
 		<article class="centered-content">
 			<div class="centered-content__content pro-resources">
 			<?php
