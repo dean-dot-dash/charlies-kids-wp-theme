@@ -1,12 +1,6 @@
 <?php get_header(); ?>
 <main>
-	<div class="hero">
-		<div class="hero__content">
-			<h1>Safe Sleep Saves Lives.</h1>
-			<button class="button--large">Read Our Story</button>
-		</div>
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/images/HeroImage.png" alt="Hero Image" />
-	</div>
+	<?php get_template_part('template-parts/hero'); ?>
 	<div class="front-page__mission">
 	<?php
 		if( have_posts() ){
@@ -70,12 +64,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="front-page__sign-up">
-		<h2>Sign up for Our Newsletter</h2>
-		<p>Non recusandae et facereuia numquam itaque aut.</p>
-		<div class="front-page__sign-up-input">
-			<input type="email" placeholder="Enter Your Email Address..."><button class="button">Sign Up</button>
-		</div>
-	</div>
+	<?php get_template_part( 'template-parts/newsletter', 'signup' ); ?>
 </main>
 <?php get_footer(); ?>

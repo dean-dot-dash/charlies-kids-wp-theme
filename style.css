@@ -387,6 +387,77 @@ header.header a img {
   margin-top: 0;
 }
 
+.newsletter-sign-up,
+.newsletter-sign-up--default,
+.newsletter-sign-up--alternate {
+  background-color: #e1f0f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 6.6rem 0;
+}
+
+.newsletter-sign-up h2,
+.newsletter-sign-up--default h2,
+.newsletter-sign-up--alternate h2 {
+  margin: 0 0 1.2rem;
+}
+
+.newsletter-sign-up h3,
+.newsletter-sign-up--default h3,
+.newsletter-sign-up--alternate h3 {
+  margin-top: 0;
+}
+
+.newsletter-sign-up p,
+.newsletter-sign-up--default p,
+.newsletter-sign-up--alternate p {
+  color: #2f606c;
+  font-family: serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0 0 2.4rem;
+}
+
+.newsletter-sign-up--alternate {
+  background-color: #f8f8f8;
+}
+
+.newsletter-sign-up--alternate h2,
+.newsletter-sign-up--alternate p {
+  color: #54327e;
+}
+
+.newsletter-sign-up--alternate h3 {
+  color: #a37dbf;
+}
+
+.newsletter-sign-up__input {
+  height: 5.6rem;
+}
+
+.newsletter-sign-up__input input {
+  height: 100%;
+  width: 31rem;
+  border: none;
+  padding: 0 0.7rem 0 0.9rem;
+  text-align: center;
+  color: #2f606c;
+  font-size: 1.6rem;
+}
+
+.newsletter-sign-up__input button {
+  border-radius: 0;
+  height: 100%;
+}
+
 .front-page__mission {
   height: 32.8rem;
   display: -webkit-box;
@@ -532,52 +603,6 @@ header.header a img {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
-}
-
-.front-page__sign-up {
-  background-color: #e1f0f5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 6.6rem 0;
-}
-
-.front-page__sign-up h2 {
-  margin: 0 0 1.2rem;
-}
-
-.front-page__sign-up p {
-  color: #2f606c;
-  font-family: serif;
-  font-size: 2.2rem;
-  font-weight: 400;
-  margin: 0 0 2.4rem;
-}
-
-.front-page__sign-up-input {
-  height: 5.6rem;
-}
-
-.front-page__sign-up-input input {
-  height: 100%;
-  width: 31rem;
-  border: none;
-  padding: 0 0.7rem 0 0.9rem;
-  text-align: center;
-  color: #2f606c;
-  font-size: 1.6rem;
-}
-
-.front-page__sign-up-input button {
-  border-radius: 0;
-  height: 100%;
 }
 
 .our-story .wp-block-media-text .wp-block-media-text__content {
