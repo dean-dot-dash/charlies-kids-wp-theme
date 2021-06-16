@@ -1,0 +1,51 @@
+.newsletter-sign-up {
+  background-color: $background-color--secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6.6rem 0;
+  h2 {
+    margin: 0 0 $s-size;
+  }
+  h3 {
+    margin-top: 0;
+  }
+  p {
+    color: $text-color--secondary;
+    font-family: serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin: 0 0 2.4rem;
+  }
+}
+.newsletter-sign-up--default {
+  @extend .newsletter-sign-up;
+}
+.newsletter-sign-up--alternate {
+  @extend .newsletter-sign-up;
+  background-color: $background-color--tertiary;
+  h2,
+  p {
+    color: $header-color--tertiary;
+  }
+  h3 {
+    color: $sub-header-color--tertiary;
+  }
+}
+
+.newsletter-sign-up__input {
+  height: 5.6rem;
+  input {
+    height: 100%;
+    width: 31rem;
+    border: none;
+    padding: 0 0.7rem 0 0.9rem;
+    text-align: center;
+    color: $text-color--secondary;
+    font-size: $m-size;
+  }
+  button {
+    border-radius: 0;
+    height: 100%;
+  }
+}
