@@ -27,9 +27,6 @@ Template Name: The Problem Page
 			?>
 			</div>
 		</article>
-		<div class="cta">
-			<h2 class="header--alt-color">Safe Sleep is the Solution.</h2>
-			<button class="button">Learn More</button>
-		</div>
+		<?php get_template_part( 'template-parts/cta', 'banner' ); ?>
 	</main>
 <?php get_footer(); ?>
