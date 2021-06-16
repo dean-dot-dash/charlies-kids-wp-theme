@@ -335,6 +335,7 @@ header.header a img {
 
 .hero {
   max-height: 62.4rem;
+  min-height: 60rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
