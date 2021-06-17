@@ -9,8 +9,32 @@ Author URI: https://dotdash.io/
 
 @font-face {
   font-family: Danzza;
-  src: url(http://localhost/wordpress/wp-content/themes/fully-custom-theme/assets/fonts/Danzza-Regular.ttf);
-  font-weight: normal;
+  src: url(assets/fonts/Danzza-Light.otf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Danzza;
+  src: url(assets/fonts/Danzza-Regular.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Danzza;
+  src: url(assets/fonts/Danzza-Medium.otf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Danzza;
+  src: url(assets/fonts/Danzza-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(assets/fonts/Lora-Regular.ttf);
+  font-weight: 400;
 }
 
 html {
@@ -34,10 +58,16 @@ body {
   min-width: 100vw;
   font-size: 1.6rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Danzza", sans-serif;
 }
 
 main {
   min-height: calc(100vh - (8rem + 40rem));
+}
+
+a,
+button {
+  font-family: "Danzza", sans-serif;
 }
 
 h1 {
@@ -67,7 +97,7 @@ h4 {
 .centered-content__content p {
   font-size: 2.4rem;
   color: #717070;
-  font-family: serif;
+  font-family: "Lora", serif;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -466,7 +496,7 @@ header.header a img {
 .newsletter-sign-up--default p,
 .newsletter-sign-up--alternate p {
   color: #2f606c;
-  font-family: serif;
+  font-family: "Lora", serif;
   font-size: 2.2rem;
   font-weight: 400;
   margin: 0 0 2.4rem;
@@ -570,7 +600,7 @@ header.header a img {
 }
 
 .front-page__video-cta p {
-  font-family: serif;
+  font-family: "Lora", serif;
   color: #717070;
   font-size: 2.4rem;
   line-height: 1.625;
@@ -636,7 +666,7 @@ header.header a img {
 .front-page__tools-cta p {
   text-align: center;
   color: #717070;
-  font-family: serif;
+  font-family: "Lora", serif;
   line-height: 1.5;
   font-size: 2.2rem;
 }
