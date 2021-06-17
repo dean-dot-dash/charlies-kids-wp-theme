@@ -41,7 +41,7 @@
     margin: $l-size 0;
   }
   p {
-    font-family: serif;
+    font-family: $body-font, serif;
     color: $text-color;
     font-size: 2.4rem;
     line-height: $leading-relaxed;
@@ -84,7 +84,7 @@
   p {
     text-align: center;
     color: $text-color;
-    font-family: serif;
+    font-family: $body-font, serif;
     line-height: $leading-normal;
     font-size: 2.2rem;
   }

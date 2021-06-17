@@ -1,5 +1,26 @@
 @font-face {
   font-family: Danzza;
-  src: url(http://localhost/wordpress/wp-content/themes/fully-custom-theme/assets/fonts/Danzza-Regular.ttf);
-  font-weight: normal;
+  src: url(assets/fonts/Danzza-Light.otf);
+  font-weight: 200;
+}
+@font-face {
+  font-family: Danzza;
+  src: url(assets/fonts/Danzza-Regular.otf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: Danzza;
+  src: url(assets/fonts/Danzza-Medium.otf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: Danzza;
+  src: url(assets/fonts/Danzza-Bold.otf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url(assets/fonts/Lora-Regular.ttf);
+  font-weight: 400;
 }
