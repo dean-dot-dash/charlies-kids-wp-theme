@@ -28,5 +28,10 @@ header.header {
         color: $nav-link-color;
       }
     }
+    li.current_page_item {
+      a {
+        color: $primary-accent;
+      }
+    }
   }
 }
