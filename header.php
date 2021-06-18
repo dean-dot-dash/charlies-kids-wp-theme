@@ -15,7 +15,7 @@
 				the_custom_logo();
 			}
 			?>
-			<nav class="header__nav">
+			<nav class="header__nav" id="primary-nav">
 				<?php
 					wp_nav_menu(
 						array(
@@ -51,7 +51,7 @@
 				</button>
 			</div>
 			<div class="header__menu-button">
-				<button>
+				<button id="menu-button">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="32"
