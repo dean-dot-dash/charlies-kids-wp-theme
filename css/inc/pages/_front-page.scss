@@ -1,15 +1,21 @@
 .front-page__mission {
-  height: 32.8rem;
+  min-height: 32.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: $footer-background-color;
   color: #fff;
-  padding: 0 15.6rem;
+  padding: 0 $l-size;
+  @include for-tablet-landscape-up {
+    padding: 0 15.6rem;
+  }
   text-align: center;
   h2 {
     line-height: $leading-snug;
     color: #fff;
+    @include for-phone-only {
+      font-size: $l-size;
+    }
   }
   .wp-block-latest-posts__list {
     display: none;
@@ -24,10 +30,31 @@
 }
 .front-page__video {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include for-tablet-landscape-up {
+    align-items: initial;
+    flex-direction: row;
+  }
+  iframe {
+    max-width: 100%;
+    @include for-tablet-landscape-up {
+      max-width: calc(100vw - (12.8rem + 37.4rem + (#{$l-size} * 2)));
+    }
+  }
 }
 .front-page__video-cta {
-  max-width: 37.4rem;
-  margin-left: 12.8rem;
+  max-width: 80%;
+  margin-left: 0;
+  margin-top: $xl-size;
+  @include for-tablet-landscape-up {
+    margin-left: $xl-size;
+    margin-top: 0;
+    max-width: 37.4rem;
+  }
+  @include for-desktop-up {
+    margin-left: 12.8rem;
+  }
   h4,
   h5 {
     color: $header-color--tertiary;
