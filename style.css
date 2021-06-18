@@ -501,6 +501,7 @@ header.header a img {
   -o-object-fit: cover;
   object-fit: cover;
   height: 62.4rem;
+  z-index: -50;
 }
 
 .hero__content {
@@ -520,7 +521,8 @@ header.header a img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 0 0 0 19.2rem;
+  padding: 0 0 0 3.2rem;
+  z-index: 3;
 }
 
 .hero__content button {
@@ -531,12 +533,22 @@ header.header a img {
 .hero__content h1,
 .hero__content h2,
 .hero__content h3 {
-  max-width: calc(100vw - (19.2rem + 62.4rem));
+  max-width: 60%;
 }
 
 .hero__content h3 {
   color: #df5e59;
   margin-top: 0;
+}
+
+.hero__gradient {
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(15%, white), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(90deg, white 0%, white 15%, rgba(255, 255, 255, 0) 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: initial;
 }
 
 .icon-link-lockups {
@@ -849,6 +861,18 @@ header.header a img {
   font-weight: 300;
 }
 
+@media (min-width: 900px) {
+  .hero__content h1,
+  .hero__content h2,
+  .hero__content h3 {
+    max-width: calc(100vw - (19.2rem + 62.4rem));
+  }
+
+  .hero__gradient {
+    display: none;
+  }
+}
+
 @media (min-width: 1184px) {
   .header__nav {
     position: relative;
@@ -888,8 +912,26 @@ header.header a img {
   }
 }
 
+@media (min-width: 1200px) {
+  .hero__content {
+    padding: 0 0 0 19.2rem;
+  }
+}
+
 @media (min-width: 1506px) {
   .header__social-links {
     display: initial;
+  }
+}
+
+@media (max-width: 599px) {
+  .hero__content h1,
+  .hero__content h2,
+  .hero__content h3 {
+    max-width: 100%;
+  }
+
+  .hero__gradient {
+    background: #fff;
   }
 }

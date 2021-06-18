@@ -7,6 +7,7 @@
   img {
     object-fit: cover;
     height: 62.4rem;
+    z-index: $z-bottom;
   }
 }
 .hero__content {
@@ -17,17 +18,46 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 0 0 19.2rem;
+  padding: 0 0 0 $l-size;
+  z-index: $z-1;
+  @include for-desktop-up {
+    padding: 0 0 0 19.2rem;
+  }
   button {
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
   }
   h1,
   h2,
   h3 {
-    max-width: calc(100vw - (19.2rem + 62.4rem));
+    max-width: 60%;
+    @include for-tablet-landscape-up {
+      max-width: calc(100vw - (19.2rem + 62.4rem));
+    }
+    @include for-phone-only {
+      max-width: 100%;
+    }
   }
   h3 {
     color: $header-color--secondary;
     margin-top: 0;
+  }
+}
+.hero__gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 15%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: $z-3;
+  display: initial;
+  @include for-tablet-landscape-up {
+    display: none;
+  }
+  @include for-phone-only {
+    background: #fff;
   }
 }
