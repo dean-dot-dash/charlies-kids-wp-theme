@@ -47,4 +47,12 @@ function charlieskids_register_styles(){
 
 add_action('wp_enqueue_scripts', 'charlieskids_register_styles');
 
+function charlieskids_register_scripts(){
+
+	wp_enqueue_script('charlieskids-jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);  
+	wp_enqueue_script('charlieskids-navigation', get_template_directory_uri() . "/assets/js/navigation.js", array(), '1.0', true);  
+}
+
+add_action('wp_enqueue_scripts', 'charlieskids_register_scripts');
+
 ?>

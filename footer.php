@@ -1,4 +1,3 @@
-</body>
 <footer class="footer">
 	<ul class="footer__social-links">
 		<li>
@@ -45,4 +44,6 @@
 		</ul>
 	</nav>
 </footer>
+<?php wp_footer(); ?>
+</body>
 </html>
