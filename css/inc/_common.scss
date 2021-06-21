@@ -29,10 +29,16 @@ h4 {
 .centered-content {
   display: flex;
   justify-content: center;
-  padding: 16.8rem 0 15.6rem;
+  padding: 8rem 0 15.6rem;
+  @include for-tablet-landscape-up {
+    padding: 16.8rem 0 15.6rem;
+  }
 }
 .centered-content__content {
-  max-width: 83.6rem;
+  max-width: calc(100vw - (#{$l-size} * 2));
+  @include for-tablet-landscape-up {
+    max-width: 83.6rem;
+  }
   h1 {
     color: $header-color--secondary;
     margin: 0 0 1.4rem;

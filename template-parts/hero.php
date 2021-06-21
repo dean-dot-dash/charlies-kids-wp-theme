@@ -16,6 +16,7 @@
 			</button> 
 		<?php endif; ?>
 	</div>
+	<div class="hero__gradient"></div>
 	<?php if( get_field('hero_background_image') ): ?>
 		<img src="<?php the_field('hero_background_image') ?>" alt="Hero Image" />
 	<?php endif; ?>

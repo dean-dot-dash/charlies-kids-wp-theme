@@ -11,7 +11,7 @@ header.header,
 header.header {
   height: $header-height;
   position: relative;
-  z-index: $z-1;
+  z-index: $z-top;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   padding: 0 5.6rem 0 $l-size;
@@ -23,6 +23,7 @@ header.header {
 }
 .header__nav {
   position: fixed;
+  z-index: $z-top;
   display: flex;
   justify-content: center;
   left: $drawer-start-position;
@@ -74,11 +75,11 @@ header.header {
   }
 }
 .header__nav.toggled-on {
-  animation: animate-in 0.6s cubic-bezier(0.64, 0, 0.78, 0);
+  animation: animate-in 0.5s cubic-bezier(0.64, 0, 0.78, 0);
   left: 0;
 }
 .header__nav.toggled-off {
-  animation: animate-out 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  animation: animate-out 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   left: $drawer-start-position;
   @media (min-width: 1184px) {
     left: 0;
@@ -92,6 +93,9 @@ header.header {
     margin-right: 1.4rem;
     svg {
       fill: none;
+    }
+    @include for-phone-only {
+      display: none;
     }
   }
   button {

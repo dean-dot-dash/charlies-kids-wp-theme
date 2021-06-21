@@ -1,9 +1,16 @@
 footer.footer {
-  height: $footer-height;
+  min-height: $footer-height;
   background-color: $footer-background-color;
-  padding: 11.2rem 15.2rem 0 19.7rem;
   display: flex;
   justify-content: space-between;
+  padding: 11.2rem $xl-size $l-size $l-size;
+  flex-direction: column;
+  @include for-tablet-portrait-up {
+    flex-direction: row;
+  }
+  @include for-desktop-up {
+    padding: 11.2rem 15.2rem 0 19.7rem;
+  }
 }
 
 .footer__social-links {

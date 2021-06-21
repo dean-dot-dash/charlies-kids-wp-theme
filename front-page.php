@@ -17,7 +17,11 @@
 	</div>
 	<div class="front-page__video-wrapper">
 		<div class="front-page__video">
-			<iframe width="740" height="426" src="https://www.youtube.com/embed/CmzKQ3PSrow"></iframe>
+			<div class="front-page__video-iframe-wrapper">
+				<div class="front-page__video-iframe">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/CmzKQ3PSrow"></iframe>
+				</div>
+			</div>
 				<div class="front-page__video-cta">
 					<h4>One Infant Loss is Too Many.</h4>
 					<p>Since 1999, more than 80,000 babies have died from sleep-related infant death (SUID) in the United States.</p>
