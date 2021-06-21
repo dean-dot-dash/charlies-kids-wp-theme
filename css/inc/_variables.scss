@@ -47,7 +47,7 @@ $z-2: 2;
 $z-3: 1;
 $z-bottom: -50;
 
-// Line height
+// LINE HEIGHTS
 $leading-none: 1;
 $leading-tight: 1.25;
 $leading-snug: 1.375;
@@ -55,7 +55,7 @@ $leading-normal: 1.5;
 $leading-relaxed: 1.625;
 $leading-loose: 2;
 
-// Fonts
+// FONTS
 $body-font: "Lora";
 $header-font: "Danzza";
 
@@ -85,3 +85,6 @@ $header-font: "Danzza";
     @content;
   }
 }
+
+// TRANSITIONS
+$default-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);

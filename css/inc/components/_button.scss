@@ -7,6 +7,11 @@
   padding: $m-size 2.4rem;
   font-size: 1.8rem;
   font-weight: 700;
+  transition: $default-transition;
+  cursor: pointer;
+  &:hover {
+    background-color: darken($button-color, 8%);
+  }
 }
 
 .button--large {
@@ -23,6 +28,10 @@
   display: flex;
   align-items: center;
   font-size: 2.2rem;
+  &:hover {
+    background: none;
+    color: darken($primary-accent, 8%);
+  }
   img {
     margin-left: $m-size;
   }
