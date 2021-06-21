@@ -29,5 +29,10 @@
     text-decoration: none;
     font-size: 2.2rem;
     font-weight: 700;
+    transition: $default-transition;
+    opacity: 0.84;
+    &:hover {
+      opacity: 1;
+    }
   }
 }

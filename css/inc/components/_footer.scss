@@ -23,7 +23,11 @@ footer.footer {
     text-decoration: none;
   }
   svg {
+    transition: $default-transition;
     fill: #e5e5e5;
+    &:hover {
+      fill: #fff;
+    }
   }
 }
 
@@ -35,6 +39,10 @@ footer.footer {
       color: $header-color;
       font-weight: 700;
       font-size: 1.8rem;
+      transition: $default-transition;
+      &:hover {
+        color: lighten($header-color, 8%);
+      }
     }
     li {
       margin-bottom: $s-size;
