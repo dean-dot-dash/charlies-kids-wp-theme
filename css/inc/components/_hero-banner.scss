@@ -18,7 +18,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 0 0 0 $l-size;
+  padding: 0 $l-size;
   z-index: $z-1;
   @include for-desktop-up {
     padding: 0 0 0 19.2rem;
@@ -31,6 +31,9 @@
   h3 {
     max-width: 60%;
     @include for-tablet-landscape-up {
+      max-width: calc(100vw - ($l-size + 62.4rem));
+    }
+    @include for-desktop-up {
       max-width: calc(100vw - (19.2rem + 62.4rem));
     }
     @include for-phone-only {
@@ -54,7 +57,7 @@
   height: 100%;
   z-index: $z-3;
   display: initial;
-  @include for-tablet-landscape-up {
+  @include for-desktop-up {
     display: none;
   }
   @include for-phone-only {
