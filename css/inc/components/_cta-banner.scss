@@ -3,11 +3,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8.4rem 0 11.8rem;
+  text-align: center;
+  padding: 8.4rem $l-size 11.8rem;
+  p {
+    @extend .body-copy;
+    color: $header-color;
+    margin: 0 0 $l-size;
+  }
 }
 .cta-banner--default {
   @extend .cta-banner;
 }
 .cta-banner--alternate {
   @extend .cta-banner;
+  background-color: $background-color--secondary;
 }

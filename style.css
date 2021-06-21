@@ -94,7 +94,10 @@ h4 {
 }
 
 .body-copy,
-.centered-content__content p {
+.centered-content__content p,
+.cta-banner p,
+.cta-banner--default p,
+.cta-banner--alternate p {
   font-size: 2.4rem;
   color: #717070;
   font-family: "Lora", serif;
@@ -238,7 +241,19 @@ h4 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 8.4rem 0 11.8rem;
+  text-align: center;
+  padding: 8.4rem 3.2rem 11.8rem;
+}
+
+.cta-banner p,
+.cta-banner--default p,
+.cta-banner--alternate p {
+  color: #007b94;
+  margin: 0 0 3.2rem;
+}
+
+.cta-banner--alternate {
+  background-color: #e1f0f5;
 }
 
 .featured-posts {
@@ -984,6 +999,109 @@ header.header a img {
   font-weight: 300;
 }
 
+.the-solution__how-tos,
+.the-solution__videos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 3.2rem;
+}
+
+.the-solution__how-tos h1 {
+  color: #df5e59;
+  margin: 8rem 0 3.2rem;
+}
+
+.the-solution__how-tos h3 {
+  margin: 0 0 6.4rem;
+}
+
+.the-solution__how-to-grid,
+.the-solution__video-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.the-solution__how-to-grid {
+  row-gap: 6rem;
+}
+
+.the-solution__how-to-image {
+  background: #f8f8f8;
+  width: 8.4rem;
+  height: 8.4rem;
+  border-radius: 8.4rem;
+}
+
+.the-solution__how-to {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.the-solution__how-to h3 {
+  color: #df5e59;
+  margin: 3.2rem 0 1rem;
+}
+
+.the-solution__how-to p {
+  margin: 0;
+  font-family: "Lora";
+  color: #007b94;
+}
+
+.the-solution__videos {
+  padding-top: 10rem;
+  padding-bottom: 22.4rem;
+}
+
+.the-solution__videos h1 {
+  margin: 0 0 3.2rem;
+}
+
+.the-solution__videos h3 {
+  color: #df5e59;
+  margin: 0 0 5.6rem;
+}
+
+.the-solution__video-grid {
+  -webkit-column-gap: 2.4rem;
+  -moz-column-gap: 2.4rem;
+  column-gap: 2.4rem;
+}
+
+.the-solution__video-grid h3 {
+  margin: 2.2rem 0 0;
+}
+
+.the-solution__video-wrapper {
+  background: #f8f8f8;
+  width: 100%;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.the-solution__video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 @media (min-width: 600px) {
   footer.footer {
     -webkit-box-orient: horizontal;
@@ -1045,9 +1163,51 @@ header.header a img {
   .front-page__featured {
     padding: 0 19.2rem;
   }
+
+  .the-solution__how-tos,
+  .the-solution__videos {
+    padding: 0 19.6rem;
+  }
+
+  .the-solution__how-to-grid,
+  .the-solution__video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
-@media (min-width: 1184px) {
+@media (min-width: 1200px) {
+  footer.footer {
+    padding: 11.2rem 15.2rem 0 19.7rem;
+  }
+
+  .hero__content {
+    padding: 0 0 0 19.2rem;
+  }
+
+  .hero__content h1,
+  .hero__content h2,
+  .hero__content h3 {
+    max-width: calc(100vw - (19.2rem + 62.4rem));
+  }
+
+  .hero__gradient {
+    display: none;
+  }
+
+  .front-page__video-iframe-wrapper {
+    width: calc(100vw - (12.8rem + 37.4rem + 19.2rem + 3.2rem));
+  }
+
+  .front-page__video-cta {
+    margin-left: 12.8rem;
+  }
+
+  .front-page__tools {
+    padding: 15.2rem 19.4rem 12rem;
+  }
+}
+
+@media (min-width: 1324px) {
   .header__nav {
     position: relative;
     width: initial;
@@ -1086,41 +1246,11 @@ header.header a img {
   }
 }
 
-@media (min-width: 1200px) {
-  footer.footer {
-    padding: 11.2rem 15.2rem 0 19.7rem;
-  }
-
-  .hero__content {
-    padding: 0 0 0 19.2rem;
-  }
-
-  .hero__content h1,
-  .hero__content h2,
-  .hero__content h3 {
-    max-width: calc(100vw - (19.2rem + 62.4rem));
-  }
-
-  .hero__gradient {
-    display: none;
-  }
-
-  .front-page__video-iframe-wrapper {
-    width: calc(100vw - (12.8rem + 37.4rem + 19.2rem + 3.2rem));
-  }
-
-  .front-page__video-cta {
-    margin-left: 12.8rem;
-  }
-
-  .front-page__tools {
-    padding: 15.2rem 19.4rem 12rem;
-  }
-}
-
 @media (min-width: 1506px) {
   .header__social-links {
-    display: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
