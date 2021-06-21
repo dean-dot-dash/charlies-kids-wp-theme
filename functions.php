@@ -50,7 +50,10 @@ add_action('wp_enqueue_scripts', 'charlieskids_register_styles');
 function charlieskids_register_scripts(){
 
 	wp_enqueue_script('charlieskids-jquery', 'https://code.jquery.com/jquery-3.6.0.min.js', array(), '3.6.0', true);  
+	wp_enqueue_script('charlieskids-scollmagic', 'http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array(), '2.0.7', true);  
+	// wp_enqueue_script('charlieskids-scollmagic-plugins', 'http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array(), '2.0.7', true);  
 	wp_enqueue_script('charlieskids-navigation', get_template_directory_uri() . "/assets/js/navigation.js", array(), '1.0', true);  
+	wp_enqueue_script('charlieskids-scroll', get_template_directory_uri() . "/assets/js/scroll.js", array(), '1.0', true);  
 }
 
 add_action('wp_enqueue_scripts', 'charlieskids_register_scripts');

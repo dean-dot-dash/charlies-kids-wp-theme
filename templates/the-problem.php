@@ -5,7 +5,7 @@ Template Name: The Problem Page
 	get_header(); 
 ?>
 	<main>
-		<div class="fixed-cta">
+		<div class="fixed-cta" id="fixed-cta">
 			<div class="fixed-cta__content">
 				<p>Learn more about Safe Sleep Basics if you are are parent or caregiver.</p>
 				<button class="button">Learn More</button>
@@ -25,6 +25,7 @@ Template Name: The Problem Page
 
 				}
 			?>
+			<div id="scroll-trigger"></div>
 			</div>
 		</article>
 		<?php get_template_part( 'template-parts/cta', 'banner' ); ?>
