@@ -58,4 +58,39 @@ function charlieskids_register_scripts(){
 
 add_action('wp_enqueue_scripts', 'charlieskids_register_scripts');
 
+function charlieskids_register_event_post_type() {
+
+	$labels = array(
+		'name' => __('Events'),
+		'singular_name' => __('Event'),
+		'add_new' => __('New Event'),
+		'add_new_item' => __('Add New Event'),
+		'edit_item' => __('Edit Event'),
+		'new_item' => __('New Event'),
+		'view_item' => __('View Event'),
+		'search_items' => __('Search Events'),
+		'not_found' => __('No Event Found'),
+		'not_found_in_trash' => __('No Event Found in Trash'),
+	);
+	$args = array(
+		'labels' => $labels,
+		'has_archive' => true,
+		'public' => true,
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'excerpt',
+			'custom-fields',
+			'thumbnail',
+			'page-attributes'
+		),
+		'show_in_rest' => true,
+		'rewrite' => array( 'slug' => 'events' ),
+	);
+	register_post_type( 'charlieskids_event', $args);
+}
+
+add_action('init', 'charlieskids_register_event_post_type');
+
 ?>
