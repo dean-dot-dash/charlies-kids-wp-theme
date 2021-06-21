@@ -1,4 +1,5 @@
 $drawer-start-position: calc(0px - (#{$nav-drawer-width} + #{$s-size}));
+$nav-to-menu-breakpoint: 1324px;
 header.header,
 .header__right-content,
 .header__left-content {
@@ -32,7 +33,7 @@ header.header {
   background-color: #fff;
   height: 100vh;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  @media (min-width: 1184px) {
+  @media (min-width: $nav-to-menu-breakpoint) {
     position: relative;
     width: initial;
     flex-direction: row;
@@ -47,7 +48,7 @@ header.header {
     margin-top: $l-size;
     margin-block-end: 0;
     padding-inline-start: 0;
-    @media (min-width: 1184px) {
+    @media (min-width: $nav-to-menu-breakpoint) {
       flex-direction: row;
       margin-top: 0;
       padding-inline-start: $xl-size;
@@ -67,7 +68,7 @@ header.header {
         color: $nav-link-color;
       }
       margin-bottom: $m-size;
-      @media (min-width: 1184px) {
+      @media (min-width: $nav-to-menu-breakpoint) {
         margin-bottom: 0;
         margin-right: $l-size;
       }
@@ -87,7 +88,7 @@ header.header {
 .header__nav.toggled-off {
   animation: animate-out 0.5s cubic-bezier(0.22, 1, 0.36, 1);
   left: $drawer-start-position;
-  @media (min-width: 1184px) {
+  @media (min-width: $nav-to-menu-breakpoint) {
     left: 0;
   }
 }
@@ -118,12 +119,12 @@ header.header {
 .header__social-links {
   display: none;
   @media (min-width: 1506px) {
-    display: initial;
+    display: flex;
   }
 }
 .header__menu-button {
   display: initial;
-  @media (min-width: 1184px) {
+  @media (min-width: $nav-to-menu-breakpoint) {
     display: none;
   }
   button {
