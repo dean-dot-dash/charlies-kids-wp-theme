@@ -93,4 +93,39 @@ function charlieskids_register_event_post_type() {
 
 add_action('init', 'charlieskids_register_event_post_type');
 
+function charlieskids_register_case_study_post_type() {
+
+	$labels = array(
+		'name' => __('Case Studies'),
+		'singular_name' => __('Case Study'),
+		'add_new' => __('New Case Study'),
+		'add_new_item' => __('Add New Case Study'),
+		'edit_item' => __('Edit Case Study'),
+		'new_item' => __('New Case Study'),
+		'view_item' => __('View Case Study'),
+		'search_items' => __('Search Case Studies'),
+		'not_found' => __('No Case Study Found'),
+		'not_found_in_trash' => __('No Case Study Found in Trash'),
+	);
+	$args = array(
+		'labels' => $labels,
+		'has_archive' => true,
+		'public' => true,
+		'hierarchical' => false,
+		'supports' => array(
+			'title',
+			'editor',
+			'excerpt',
+			'custom-fields',
+			'thumbnail',
+			'page-attributes'
+		),
+		'show_in_rest' => true,
+		'rewrite' => array( 'slug' => 'casestudies' ),
+	);
+	register_post_type( 'ck_casestudy', $args);
+}
+
+add_action('init', 'charlieskids_register_case_study_post_type');
+
 ?>
