@@ -1066,8 +1066,7 @@ header.header a img {
 }
 
 .the-solution__videos {
-  padding-top: 10rem;
-  padding-bottom: 22.4rem;
+  padding: 10rem 3.2rem 22.4rem;
 }
 
 .the-solution__videos h1 {
@@ -1173,6 +1172,10 @@ header.header a img {
   .the-solution__video-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .the-solution__videos {
+    padding: 10rem 19.6rem 22.4rem;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1246,7 +1249,7 @@ header.header a img {
   }
 }
 
-@media (min-width: 1506px) {
+@media (min-width: 1634px) {
   .header__social-links {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -51,8 +51,10 @@
   }
 }
 .the-solution__videos {
-  padding-top: 10rem;
-  padding-bottom: 22.4rem;
+  padding: 10rem $l-size 22.4rem;
+  @include for-tablet-landscape-up {
+    padding: 10rem 19.6rem 22.4rem;
+  }
   h1 {
     margin: 0 0 $l-size;
   }
