@@ -30,7 +30,11 @@ Template Name: Support Us Page
 					</div>
 					<h3>Donate Direction to help our content reach new families and professionals</h3>
 					<div class="icon-link-lockup__link">
-					<a href="#">Donate Now</a>
+					<!-- <a href="#">Donate Now</a> -->
+					<button class="button--icon button--large button--alt-color">
+						Donate Now
+						<?php get_template_part('template-parts/icon', 'arrow'); ?>
+					</button>
 					</div>
 				</div>
 				<div class="icon-link-lockup">
@@ -44,7 +48,11 @@ Template Name: Support Us Page
 					</div>
 					<h3>Share, Like, Comment on our Videos</h3>
 					<div class="icon-link-lockup__link">
-					<a href="#">Watch Videos</a>
+					<!-- <a href="#">Watch Videos</a> -->
+					<button class="button--icon button--large button--alt-color">
+						Watch Videos
+						<?php get_template_part('template-parts/icon', 'arrow'); ?>
+					</button>
 					</div>
 				</div>
 				<div class="icon-link-lockup">
@@ -54,7 +62,11 @@ Template Name: Support Us Page
 					</div>
 					<h3>Participate in/organize a Donor Event</h3>
 					<div class="icon-link-lockup__link">
-					<a href="#">Learn More</a>
+					<!-- <a href="#">Learn More</a> -->
+					<button class="button--icon button--large button--alt-color">
+						Learn More
+						<?php get_template_part('template-parts/icon', 'arrow'); ?>
+					</button>
 					</div>
 				</div>
 				<div class="icon-link-lockup">
@@ -64,7 +76,11 @@ Template Name: Support Us Page
 					</div>
 					<h3>Purchase/Gift a Book</h3>
 					<div class="icon-link-lockup__link">
-					<a href="#">Purchase Now</a>
+					<!-- <a href="#">Purchase Now</a> -->
+					<button class="button--icon button--large button--alt-color">
+						Purchase Now
+						<?php get_template_part('template-parts/icon', 'arrow'); ?>
+					</button>
 					</div>
 				</div>
 			</div>

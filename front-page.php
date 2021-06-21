@@ -28,7 +28,8 @@
 					<h5>Nearly all of these deaths were preventable.</h5>
 					<button class="button--icon button--large">
 						Learn More
-						<img width="32px" height="32px" src="<?php echo get_template_directory_uri(); ?>/assets/images/right-arrow.png" alt="Hero Image" />	
+						<!-- <img width="32px" height="32px" src="<?php echo get_template_directory_uri(); ?>/assets/images/right-arrow.png" alt="Hero Image" />	 -->
+						<?php get_template_part('template-parts/icon', 'arrow'); ?>
 					</button>
 				</div>
 		</div>
