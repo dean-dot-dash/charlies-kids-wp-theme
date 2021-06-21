@@ -768,6 +768,61 @@ header.header a img {
   height: 100%;
 }
 
+.recent-studies__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 10.6rem;
+}
+
+.recent-studies {
+  max-width: calc(100vw - (3.2rem * 2));
+}
+
+.recent-studies__study {
+  background-color: #f8f8f8;
+  width: 100%;
+  height: calc(23.7rem * 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+}
+
+.recent-studies__study img {
+  width: 100%;
+  max-width: 100%;
+  max-height: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.recent-studies__content {
+  padding: 2.4rem 4.6rem 2.8rem 5.6rem;
+}
+
+.recent-studies__content h3 {
+  margin: 0 0 0.8rem;
+}
+
+.recent-studies__content p {
+  font-weight: 700;
+  color: #717070;
+  opacity: 0.7;
+  line-height: 1.625;
+}
+
+.recent-studies__content a {
+  text-decoration: none;
+}
+
 .front-page__mission {
   min-height: 32.8rem;
   display: -webkit-box;
@@ -1133,6 +1188,23 @@ header.header a img {
   .hero__content h2,
   .hero__content h3 {
     max-width: calc(100vw - ($l-size + 62.4rem));
+  }
+
+  .recent-studies {
+    max-width: 83.6rem;
+  }
+
+  .recent-studies__study {
+    height: 23.7rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .recent-studies__study img {
+    max-width: 26.7rem;
+    max-height: 100%;
   }
 
   .front-page__mission {

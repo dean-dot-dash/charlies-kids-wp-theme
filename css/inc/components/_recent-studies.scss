@@ -1,0 +1,48 @@
+.recent-studies__wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10.6rem;
+}
+.recent-studies {
+  max-width: calc(100vw - (#{$l-size} * 2));
+  @include for-tablet-landscape-up {
+    max-width: 83.6rem;
+  }
+}
+.recent-studies__study {
+  background-color: $background-color--tertiary;
+  width: 100%;
+  height: calc(23.7rem * 2);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.4rem;
+  img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 50%;
+    object-fit: cover;
+  }
+  @include for-tablet-landscape-up {
+    height: 23.7rem;
+    flex-direction: row;
+    img {
+      max-width: 26.7rem;
+      max-height: 100%;
+    }
+  }
+}
+.recent-studies__content {
+  padding: 2.4rem 4.6rem 2.8rem 5.6rem;
+  h3 {
+    margin: 0 0 0.8rem;
+  }
+  p {
+    font-weight: 700;
+    color: $text-color;
+    opacity: 0.7;
+    line-height: $leading-relaxed;
+  }
+  a {
+    text-decoration: none;
+  }
+}
