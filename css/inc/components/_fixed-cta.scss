@@ -3,6 +3,12 @@
   top: calc(16.8rem + 8rem);
   width: calc((100vw - (83.6rem)) / 2);
   padding: 0 $xl-size;
+  transition: $default-transition;
+  opacity: 1;
+}
+.fixed-cta.faded {
+  opacity: 0;
+  pointer-events: none;
 }
 .fixed-cta__content {
   display: flex;
