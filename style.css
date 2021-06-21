@@ -199,8 +199,29 @@ h4 {
   color: #d83d37;
 }
 
-.button--icon img {
+.button--icon:hover svg {
+  fill: #d83d37;
+}
+
+.button--icon svg {
   margin-left: 1.6rem;
+  fill: #df5e59;
+}
+
+.button--alt-color {
+  color: #54327e;
+}
+
+.button--alt-color:hover {
+  color: #8052ba;
+}
+
+.button--alt-color:hover svg {
+  fill: #8052ba;
+}
+
+.button--alt-color svg {
+  fill: #54327e;
 }
 
 .cta-banner,

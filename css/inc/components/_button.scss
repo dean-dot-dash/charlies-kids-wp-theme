@@ -31,8 +31,25 @@
   &:hover {
     background: none;
     color: darken($primary-accent, 8%);
+    svg {
+      fill: darken($primary-accent, 8%);
+    }
   }
-  img {
+  svg {
     margin-left: $m-size;
+    fill: $primary-accent;
+  }
+}
+
+.button--alt-color {
+  color: $button-color--secondary;
+  &:hover {
+    color: lighten($button-color--secondary, 18%);
+    svg {
+      fill: lighten($button-color--secondary, 18%);
+    }
+  }
+  svg {
+    fill: $button-color--secondary;
   }
 }
