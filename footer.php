@@ -22,26 +22,15 @@
 		</li>
 	</ul>
 	<nav class="footer__nav">
-		<ul>
-			<li>
-				<a href="#">Families</a>
-			</li>
-			<li>
-				<a href="#">Professional Resources Portal</a>
-			</li>
-			<li>
-				<a href="#">Our Story</a>
-			</li>
-			<li>
-				<a href="#">Why Safe Sleep</a>
-			</li>
-			<li>
-				<a href="#">Events</a>
-			</li>
-			<li>
-				<a href="#">Donate</a>
-			</li>
-		</ul>
+		<?php
+			wp_nav_menu(
+				array(
+					'menu' => 'footer',
+					'conatiner' => '',
+					'theme_location' => 'footer'
+				)
+			);
+		?>
 	</nav>
 </footer>
 <?php wp_footer(); ?>
