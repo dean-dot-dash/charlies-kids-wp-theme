@@ -6,6 +6,10 @@
   transition: $default-transition;
   opacity: 1;
   z-index: $z-top;
+  display: none;
+  @media (min-width: 1140px) {
+    display: initial;
+  }
 }
 .fixed-cta.faded {
   opacity: 0;

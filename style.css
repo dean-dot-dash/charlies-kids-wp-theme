@@ -406,6 +406,7 @@ h4 {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   opacity: 1;
   z-index: 50;
+  display: none;
 }
 
 .fixed-cta.faded {
@@ -1515,6 +1516,12 @@ header.header a img {
 
   .the-solution__videos {
     padding: 10rem 19.6rem 22.4rem;
+  }
+}
+
+@media (min-width: 1140px) {
+  .fixed-cta {
+    display: initial;
   }
 }
 
