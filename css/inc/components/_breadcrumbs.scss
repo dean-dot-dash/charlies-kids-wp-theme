@@ -1,0 +1,26 @@
+.breadcrumbs__wrapper {
+  position: absolute;
+  top: 6.8rem;
+  left: 19.4rem;
+  display: flex;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: $list-color;
+    font-weight: 700;
+  }
+}
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+  li {
+    margin-right: $xs-size;
+    a {
+      color: $text-color;
+      transition: $default-transition;
+      &:hover {
+        color: darken($text-color, 24%);
+      }
+    }
+  }
+}
