@@ -256,6 +256,11 @@ h4 {
   background-color: #e1f0f5;
 }
 
+.cta-banner--alternate button {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .featured-posts {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
