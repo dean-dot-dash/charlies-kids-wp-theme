@@ -128,6 +128,11 @@ function charlieskids_register_case_study_post_type() {
 
 add_action('init', 'charlieskids_register_case_study_post_type');
 
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 // Breadcrumbs
 // copied from: https://www.thewebtaylor.com/articles/wordpress-creating-breadcrumbs-without-a-plugin
 function custom_breadcrumbs() {
