@@ -8,7 +8,9 @@ Template Name: The Problem Page
 		<div class="fixed-cta" id="fixed-cta">
 			<div class="fixed-cta__content">
 				<p>Learn more about Safe Sleep Basics if you are are parent or caregiver.</p>
-				<button class="button">Learn More</button>
+				<a class="button" href="<?php echo get_page_link( get_page_by_title( "The Solution" )->ID ); ?>">
+					Learn More
+				</a>
 			</div>
 		</div>
 		<article class="centered-content">

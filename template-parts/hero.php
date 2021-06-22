@@ -11,9 +11,9 @@
 			</h3>
 		<?php endif; ?>
 		<?php if( get_field('hero_button_label') ): ?>
-			<button class="button--large">
+			<a href="<?php get_field('hero_button_link') ?>" class="button--large">
 				<?php the_field('hero_button_label') ?>
-			</button> 
+			</a> 
 		<?php endif; ?>
 	</div>
 	<div class="hero__gradient"></div>

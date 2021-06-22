@@ -264,6 +264,7 @@ h4 {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button:hover,
@@ -404,6 +405,7 @@ h4 {
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   opacity: 1;
+  z-index: 50;
 }
 
 .fixed-cta.faded {
@@ -606,6 +608,7 @@ header.header a img {
   fill: none;
 }
 
+.header__right-content a,
 .header__right-content button {
   background: none;
   border: none;
@@ -613,6 +616,7 @@ header.header a img {
   margin-left: 3.2rem;
 }
 
+.header__right-content a svg,
 .header__right-content button svg {
   fill: #df5e59;
 }
@@ -709,7 +713,8 @@ header.header a img {
   z-index: 3;
 }
 
-.hero__content button {
+.hero__content button,
+.hero__content a {
   -webkit-box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
 }
@@ -1199,7 +1204,9 @@ header.header a img {
   align-items: center;
 }
 
-.front-page__tools-cta button {
+.front-page__tools-cta button,
+.front-page__tools-cta a {
+  text-align: center;
   margin-top: 2rem;
   min-width: 100%;
 }

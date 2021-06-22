@@ -14,7 +14,7 @@
 			<?php the_field('cta_banner_paragraph'); ?>
 		</p>
 	<?php endif; ?>
-	<button class="button">
+	<a href="<?php the_field('cta_banner_button_link') ?>" class="button">
 		<?php the_field('cta_banner_button_label'); ?>
-	</button>
+	</a>
 </div>
