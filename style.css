@@ -113,10 +113,11 @@ h4 {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 8rem 0 15.6rem;
+  position: relative;
 }
 
 .centered-content__content {
-  max-width: calc(100vw - (3.2rem * 2));
+  width: calc(100vw - (3.2rem * 2));
 }
 
 .centered-content__content h1 {
@@ -155,6 +156,45 @@ h4 {
 
 .header--alt-color {
   color: #54327e !important;
+}
+
+.breadcrumbs__wrapper {
+  position: absolute;
+  top: 6.8rem;
+  left: 19.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.breadcrumbs__wrapper a {
+  text-decoration: none;
+  color: #71adbc;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  margin-right: 1rem;
+}
+
+.breadcrumbs li a {
+  color: #717070;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.breadcrumbs li a:hover {
+  color: #343333;
 }
 
 .button,
@@ -828,6 +868,22 @@ header.header a img {
   text-decoration: none;
 }
 
+.board-team ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+  line-height: 2;
+}
+
+.board-team ul li {
+  font-weight: 700;
+  color: #007b94;
+}
+
+.board-team ul li span {
+  color: #87c5d4;
+}
+
 .dos-donts__container {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1113,6 +1169,21 @@ header.header a img {
   align-items: flex-end;
 }
 
+.our-story a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.our-story a svg {
+  fill: #007b94;
+  margin-left: 1.2rem;
+}
+
 .our-story .wp-block-media-text .wp-block-media-text__content {
   padding: 0 3.2rem 0 0;
   color: pink;
@@ -1297,7 +1368,7 @@ header.header a img {
   }
 
   .centered-content__content {
-    max-width: 83.6rem;
+    width: 83.6rem;
   }
 
   .hero__content h1,

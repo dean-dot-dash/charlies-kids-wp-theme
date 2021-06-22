@@ -19,6 +19,10 @@ Template Name: Our Story Page
 
 				}
 			?>
+			<a href="<?php echo get_page_link( get_page_by_title( "Board and Team" )->ID ); ?>">
+				<h3>View our Board and Team Members</h3>
+				<?php get_template_part('template-parts/icon', 'arrow'); ?>
+			</a>
 			</div>
 		</article>
 	</main>
