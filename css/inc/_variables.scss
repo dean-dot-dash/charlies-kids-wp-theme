@@ -3,7 +3,8 @@ $dark-green: #2f606c;
 $medium-green: #007b94;
 $green: #87c5d4;
 $gray-green: #71adbc;
-$light-green: #e1f0f5;
+$light-green: #e7f9ff;
+$green-white: #e1f0f5;
 $red: #df5e59;
 $purple: #54327e;
 $light-purple: #a37dbf;
@@ -12,6 +13,7 @@ $light-gray: #f8f8f8;
 
 // COLOR ROLES
 $primary-accent: $red;
+$secondary-accent: $medium-green;
 
 // COLOR APPLICATION
 $nav-link-color: $dark-green;
@@ -24,7 +26,7 @@ $button-color: $primary-accent;
 $button-color--secondary: $purple;
 $text-color: $gray;
 $text-color--secondary: $dark-green;
-$background-color--secondary: $light-green;
+$background-color--secondary: $green-white;
 $background-color--tertiary: $light-gray;
 $link-color: $medium-green;
 $link-color--secondary: $purple;

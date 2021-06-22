@@ -49,6 +49,10 @@
     font-family: $body-font;
     color: $header-color;
   }
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
 }
 .the-solution__videos {
   padding: 10rem $l-size 22.4rem;
