@@ -28,8 +28,10 @@ Template Name: The Solution Page
 				<div class="the-solution__how-to-grid">
 					<div class="the-solution__how-to">
 						<div class="the-solution__how-to-image"></div>
-						<h3>Do’s & Don’ts</h3>
-						<p>We love mythbusting.</p>
+						<a href="<?php echo get_page_link( get_page_by_title( "Do's and Don'ts" )->ID ); ?>">
+							<h3>Do’s & Don’ts</h3>
+							<p>We love mythbusting.</p>
+						</a>
 					</div>
 					<div class="the-solution__how-to">
 						<div class="the-solution__how-to-image"></div>
