@@ -91,3 +91,11 @@ $header-font: "Danzza";
 
 // TRANSITIONS
 $default-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+// TRUNCATE TEXT
+@mixin truncated($width) {
+  width: $width;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -9,7 +9,7 @@
 					while( have_posts() ){
 
 						the_post();
-						the_excerpt();
+						get_template_part('template-parts/content', 'archive');
 
 					}
 
